@@ -1,0 +1,29 @@
+body{
+    background-color: #17181c;
+    color: #FFFFFF;
+    font-family: sans-serif;
+}
+
+.pulse{
+    background: none;
+    color: rgba(69, 158, 117, 0.836);
+    border: 2px solid;
+    border-radius: 10%;
+    margin: 50px;
+    padding: 15px 40px;
+    transition: 0.25s;
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+
+}
+
+.pulse:hover, .pulse:focus{
+    color: #FFF;
+    border-color: rgba(117, 204, 163, 0.836);
+    animation: pulsar 1s;
+}
+
+@keyframes pulsar {
+    0%{
+        box-shadow: 0 0 0 0 rgba(117, 204, 163, 0.836);
+    }
+}
